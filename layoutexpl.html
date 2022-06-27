@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    /* Style the header */
+    header {
+      background-color: #666;
+      padding: 30px;
+      text-align: center;
+      font-size: 35px;
+      color: white;
+    }
+    
+    /* Create two columns/boxes that floats next to each other */
+    nav {
+      float: left;
+      width: 30%;
+      height: 300px; /* only for demonstration, should be removed */
+      background: #ccc;
+      padding: 20px;
+    }
+    
+    /* Style the list inside the menu */
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    article {
+      float: left;
+      padding: 20px;
+      width: 70%;
+      background-color: #f1f1f1;
+      height: 300px; /* only for demonstration, should be removed */
+    }
+    
+    /* Clear floats after the columns */
+    section::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Style the footer */
+    footer {
+      background-color: #999;
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+    
+    /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+     @media (max-width: 600px) {
+      nav, article {
+        width: 100%;
+        height: auto;
+      } 
+    }
+    </style>
+<body>
+    <h1>THIS IS A SAMPLE PAGE</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla alias excepturi repellendus. Amet asperiores doloribus eos dolores quod tempore delectus.</p>
+<header>
+    <h2>PROJECTS</h2>
+</header>
+<section>
+    <nav>
+        <ul>
+            <li><a href="#">first</a></li>
+            <li><a href="#">second</a></li>
+            <li><a href="#">third</a></li>
+        </ul>
+    </nav>
+    <article>
+        <h1>First</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, odit! Iusto quaerat placeat consequatur praesentium temporibus voluptatum vel atque eos quod, tempora reprehenderit debitis quos corrupti officiis odit magni eveniet veritatis. Delectus ratione iste repudiandae fugiat nam mollitia doloremque consequuntur odio perspiciatis repellendus. Ratione eaque similique debitis optio non aut!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil officia esse blanditiis fuga beatae ratione officiis quasi! Odio corporis officiis laudantium, illum non perspiciatis eum repudiandae a nemo soluta consectetur!</p> 
+    </article>
+</section>
+<footer>
+    <p>footer part</p>
+</footer>
+</body>
+</html>
